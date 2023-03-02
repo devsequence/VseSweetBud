@@ -1,0 +1,317 @@
+.hero{
+  padding: 231px 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .container{
+    position: relative;
+    padding: 0 0 248px;
+  }
+  &-title{
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 66px;
+    color: $white;
+    margin-bottom: 20px;
+    max-width: 748px;
+    h1{
+      font-size: inherit;
+      line-height: inherit;
+      color: $white;
+    }
+  }
+  &-subtitle{
+    color: $white;
+    max-width: 790px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 10px;
+  }
+  &-text{
+    color: $white;
+    max-width: 790px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+  }
+  &-wrap{
+    position: absolute;
+    bottom: -90px;
+    display: flex;
+    justify-content: space-between;
+    background: $white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 40px;
+  }
+  &-item{
+    display: flex;
+    width: calc(33.3333% - 30px);
+    &__media{
+      width: 58px;
+      margin-right: 28px;
+    }
+    &__desc{
+      width: calc(100% - 86px);
+    }
+    &__title{
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 22px;
+      color: $secondary;
+      margin-bottom: 5px;
+    }
+    &__text{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $secondary;
+    }
+  }
+}
+.service{
+  padding: 234px 0 100px;
+  .title-section{
+    margin-bottom: 6px;
+  }
+  .subtitle-section{
+    max-width: 770px;
+    margin: 0 auto 35px;
+  }
+  &-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  &-item{
+    margin: 0 15px 30px;
+    background: $white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(50% - 30px);
+    flex-grow: 0;
+    &__media{
+      flex-basis: 280px;
+    }
+    &__desc{
+      padding: 26px 42px 36px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    &__title{
+      width: 100%;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      color: $secondary;
+      margin-bottom: 10px;
+    }
+    &__list{
+      width: 100%;
+      margin-bottom: 20px;
+      li{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $secondary;
+        padding-left: 25px;
+        position: relative;
+        &:before{
+          position: absolute;
+          content: '';
+          left: 0;
+          width: 16px;
+          top: 50%;
+          margin-top: -1px;
+          height: 3px;
+          background: $primary;
+          border-radius: 36px;
+        }
+      }
+    }
+    &__link{
+      width: 100%;
+      margin: auto 0 0;
+    }
+  }
+}
+.banner{
+  padding: 100px 0 135px;
+  background: $white;
+  &-wrap{
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 32.9374px rgba(0, 50, 111, 0.1);
+    border-radius: 10px;
+    padding: 60px 0 60px 76px;
+    position: relative;
+  }
+  &-desc{
+    max-width: 603px;
+  }
+  &-title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: $default;
+    max-width: 665px;
+    margin-bottom: 5px;
+    span{
+      color: $primary;
+    }
+  }
+  &-text{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    color: #2C2C2C;
+    margin-bottom: 20px;
+    a{
+      margin-left: 15px;
+      display: inline;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 35px;
+      color: #2F2F2F;
+      b{
+        font-size: 36px;
+        line-height: 49px;
+        color: #2F2F2F;
+      }
+    }
+  }
+  &-form{
+    width: 100%;
+    margin-bottom: 30px;
+    form{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      label{
+        display: block;
+        max-width: 320px;
+        width: 100%;
+      }
+      input{
+        width: 100%;
+        height: 60px;
+      }
+      button{
+        width: 100%;
+        max-width: 220px;
+      }
+    }
+  }
+  &-info{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #2C2C2C;
+  }
+  &-messenger{
+    margin-bottom: 17px;
+    ul{
+      display: flex;
+    }
+    li{
+      margin-right: 20px;
+    }
+    a{
+      img{
+        margin-right: 10px;
+      }
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: #2C2C2C;
+    }
+  }
+  &-media{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 470px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 509px;
+    img{
+      position: absolute;
+      right: 112px;
+      bottom: 0;
+    }
+  }
+}
+.advantages{
+  padding: 123px 0 106px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .title-section{
+    color: $white;
+    margin-bottom: 4px;
+    h2{
+      color: inherit;
+    }
+  }
+  .subtitle-section{
+    color: $white;
+    margin-bottom: 30px;
+  }
+  &-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px 0;
+  }
+  &-item{
+    background: $white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    margin: 0 15px 30px;
+    padding: 35px 25px 40px;
+    width: calc(25% - 30px);
+    &__media{
+      text-align: center;
+      margin-bottom: 15px;
+      img{
+        width: 100%;
+        height: 100%;
+        max-width: 60px;
+        max-height: 60px;
+        display: inline-block;
+      }
+    }
+    &__title{
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      color: #2F2F2F;
+    }
+    &__text{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #2F2F2F;
+    }
+  }
+}
+.gallery{
+  padding: 136px 0 146px;
+  background: rgba(235,246,252, .6);
+  .title-section{
+    margin-bottom: 4px;
+  }
+  .subtitle-section{
+    max-width: 740px;
+    margin: 0 auto 30px;
+  }
+}
