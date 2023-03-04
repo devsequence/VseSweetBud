@@ -1699,6 +1699,7 @@ ol {
         display: none; }
       .header-lang ul {
         background: transparent;
+        box-shadow: none;
         display: flex;
         position: relative;
         opacity: 1;
