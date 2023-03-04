@@ -16,36 +16,43 @@
   }
   &-phone{
     position: absolute;
-    right: 250px;
-    top: 23px;
+    right: 264px;
+    top: 24px;
     a{
       font-weight: 700;
       font-size: 18px;
       line-height: 16px;
       color: $white;
+      &:hover{
+        color: $primary;
+      }
     }
   }
   &-nav{
-    margin: 0 auto 0 0;
+    margin: -10px auto 0 0;
     display: flex;
     align-items: center;
     ul{
       display: flex;
     }
     li{
-      margin-right: 36px;
+      margin-right: 37px;
     }
     a{
       font-weight: 700;
       font-size: 15px;
       line-height: 16px;
       color: $white;
+      &:hover{
+        color: $primary;
+      }
     }
   }
   &-lang{
     display: flex;
     align-items: center;
-    margin-left: 36px;
+    position: relative;
+    margin: -8px 14px 2px 37px;
     &__title{
       font-weight: 700;
       font-size: 15px;
@@ -66,19 +73,51 @@
         background-size: 9px;
         background-repeat: no-repeat;
       }
-
     }
     ul{
       position: absolute;
       top: -10px;
+      left: -10px;
       opacity: 0;
       visibility: hidden;
       z-index: -1;
+      transition: all ease 300ms;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.07);
+      border-radius: 4px;
+      padding: 8px 21px 12px 17px;
+      a{
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 22px;
+        color: #2F2F2F;
+        &:hover{
+          color: $primary;
+        }
+      }
+    }
+    &:hover{
+      .header-lang__title{
+        color: $primary;
+        &:after{
+          background-image: url("data:image/svg+xml,%3Csvg width='11' height='7' viewBox='0 0 11 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5.5 5.5L10 1' stroke='%23FF7B0F' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        }
+      }
+      ul{
+        opacity: 1;
+        visibility: visible;
+        z-index: 10;
+        top: 25px;
+      }
     }
   }
   &-button{
     display: flex;
     align-items: center;
+    margin-top: -13px;
+    &__item{
+      display: none;
+    }
     .btn-primary{
       font-size: 14px;
       line-height: 19px;
