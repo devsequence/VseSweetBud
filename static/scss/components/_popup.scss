@@ -245,12 +245,11 @@
     background: #FFFFFF;
     border: 1px solid #E2E2E2;
     border-radius: 4px;
-    padding: 21px 25px 30px;
+    padding: 21px 10px 30px;
     margin-bottom: 10px;
-    margin: 0 -10px;
     li{
-      width: calc(33.333% - 20px);
-      margin:  0 10px;
+      width: 33.333%;
+      padding:  0 10px;
     }
   }
 }
@@ -264,8 +263,8 @@
     .close{
       position: absolute;
       border: 1px solid #E2E2E2;
-      top: 15px;
-      right: 15px;
+      top: 5px;
+      right: 5px;
       border-radius: 50px;
       background: #fff;
       width: 20px;
@@ -311,7 +310,8 @@
   float: right; }
 .rating > label .icon {
   fill: #E2E2E2;
-  margin-bottom: 8px;}
+  margin: 0 auto 8px;
+  }
 
 .rating > label:before {
   margin: 5px;

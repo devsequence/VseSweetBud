@@ -68,6 +68,10 @@ jQuery(function($) {
         if($('.thumb-Images li').length < 1){
             $('.image-upload__image .icon').removeClass('hidden');
         }
+
+        if($('.thumb-Images li').length < 1){
+            $('.thumb-Images').remove();
+        }
     });
 });
 function ApplyFileValidationRules(readerEvt) {
