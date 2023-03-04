@@ -662,7 +662,7 @@
     </div>
     <div class="popup-overlay"></div>
 </div>
-<div class="popup-reviews popup" data-popup="reviews">
+<div class="popup-reviews popup active" data-popup="reviews">
     <div class="popup-wrap">
         <div class="popup-title">
             <span>Залишити відгук</span>
@@ -670,6 +670,48 @@
         </div>
         <div class="popup-form">
             <form action="#">
+                <div class="review-form__rating">
+                    <div class="rating">
+                        <input type="radio" id="star1" class="input_rating" name="CommentModel[rating]" value="5">
+                        <label class="rating-label" for="star1">
+                            <svg class="icon">
+                                <use xlink:href="#ic-star"></use>
+                            </svg>
+                            Чудовий
+                        </label>
+                        <input type="radio" id="star2" class="input_rating" name="CommentModel[rating]" value="4">
+                        <label class="rating-label" for="star2">
+                            <svg class="icon">
+                                <use xlink:href="#ic-star"></use>
+                            </svg>
+                            Добрий
+                        </label>
+                        <input type="radio" id="star3" class="input_rating" name="CommentModel[rating]" value="3">
+                        <label class="rating-label" for="star3">
+                            <svg class="icon">
+                                <use xlink:href="#ic-star"></use>
+                            </svg>
+                            Нормальний
+                        </label>
+                        <input type="radio" id="star4" class="input_rating" name="CommentModel[rating]" value="2">
+                        <label class="rating-label" for="star4">
+                            <svg class="icon">
+                                <use xlink:href="#ic-star"></use>
+                            </svg>
+                            Так собі
+
+                        </label>
+                        <input type="radio" id="star5" class="input_rating" name="CommentModel[rating]" value="1">
+                        <label class="rating-label" for="star5">
+                            <svg class="icon">
+                                <use xlink:href="#ic-star"></use>
+                            </svg>
+                            Поганий
+
+                        </label>
+                    </div>
+                    <div class="clear"></div>
+                </div>
                 <label class="label">
                     <span>Переваги</span>
                     <input type="text" name="Переваги" class="input">
@@ -682,6 +724,20 @@
                     <span>Коментар</span>
                     <textarea name="Коментар" class="textarea"></textarea>
                 </label>
+                <div class="image-upload__image" id="Filelist"></div>
+                <div class="upload-image">
+                    <label class="upload-image-label">
+                        <input type="file" name="sold-request-files[]" id="files" multiple="" accept="image/jpeg, image/png, image/gif,">
+                    </label>
+                    <img src="../static/images/general/image-gallerysvg.svg" alt="image-gallery">
+                    <div class="upload-image__text">
+                        <b>Додати фотографії</b>
+                        <span>Перетягніть файли сюди чи натисніть на кнопку. Додавайте до 10 зображень у форматі .jpg, .gif, .png, розміром файлу до 5 МБ</span>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn-secondary">Вибрати файли</button>
+                    </div>
+                </div>
                 <label class="label">
                     <span>Ваше ім'я та прізвище</span>
                     <input type="text" name="Ім'я та прізвище" class="input">
@@ -690,12 +746,8 @@
                     <span>Електронна пошта</span>
                     <input type="email" name="Електронна пошта" class="input">
                 </label>
-                <label class="label">
-                    <span>Коментар</span>
-                    <textarea name="Коментар" class="textarea"></textarea>
-                </label>
                 <div class="form-bottom">
-                    <button type="reset" class="btn-secondary">Скасувати</button>
+                    <button type="reset" class=" popup-close btn-secondary">Скасувати</button>
                     <button type="submit" class="btn-primary">Залишити відгук</button>
                     <span>
                         Щоб ваш відгук або коментар пройшов модерацію і був опублікований, ознайомтеся, будь ласка, з
@@ -718,6 +770,7 @@
     <script type="text/javascript" src="../static/js/jquery.min.js"></script>
     <script type="text/javascript" src="../static/js/aos.min.js"></script>
     <script type="text/javascript" src="../static/js/slick.min.js"></script>
+    <script type="text/javascript" src="../static/js/uploadImage.js"></script>
 
 <!-- endbuild -->
 <script  type="text/javascript" src="../static/js/common.js"></script>

@@ -133,6 +133,7 @@ function popupOpen() {
         var $this = $(this);
         var popupButtonData = $this.data('popup');
         $('.popup').removeClass('active');
+        $('body').addClass('scroll');
         $('div[data-popup = '+popupButtonData+']').addClass('active');
         // $('body').addClass('scroll');
     });
@@ -142,13 +143,13 @@ $('.popup-close').on('click', function (e) {
     var $this = $(this);
     $this.parents('.popup').removeClass('active');
     $('.popup-overlay').removeClass('active');
-    // $('body').removeClass('scroll');
+    $('body').removeClass('scroll');
 });
 $('.popup-overlay').on('click', function (e) {
     var $this = $(this);
     $this.removeClass('active');
     $('.popup').removeClass('active');
-    // $('body').removeClass('scroll');
+    $('body').removeClass('scroll');
 });
 $('.emailForm').on('click', function (e) {
 

@@ -568,6 +568,15 @@
     }
   }
 }
+@media screen and (max-width: 650px) {
+  .upload-image{
+    flex-direction: column;
+    text-align: center;
+    &__text{
+      margin: 10px 0;
+    }
+  }
+}
 @media screen and (max-width: 567px) {
   .advantages{
     &-item{
@@ -652,6 +661,19 @@
   }
 }
 @media screen and (max-width: 374px) {
+  .popup-form{
+    .form-bottom{
+      flex-direction: column;
+      button{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 5px;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
   .banner{
     &.banner-second{
       .banner-media {
