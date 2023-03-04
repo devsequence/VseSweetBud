@@ -472,12 +472,13 @@
     text-align: left;
   }
   .hero{
+    margin-bottom: 202px;
     &-item{
       width: calc(100% - 30px);
     }
   }
   .service{
-    padding: 242px 0 68px;
+    padding: 60px 0 68px;
     &-item{
       width: 100%;
       flex-basis: calc(100% - 30px);
@@ -587,8 +588,9 @@
 @media screen and (max-width: 480px) {
   .hero{
     background-position: 50% 0;
+    margin-bottom: 310px;
     .container{
-      padding: 0 15px 375px;
+      padding: 0 15px 275px;
     }
     &-wrap{
       bottom: -280px;
@@ -599,7 +601,7 @@
     }
   }
   .service{
-    padding: 342px 0 50px;
+    padding: 60px 0 50px;
   }
 
   .banner{

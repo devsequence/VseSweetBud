@@ -5,7 +5,6 @@
 * Browsers: last 4 version
 */
 
-
 @font-face {
   font-family: 'UniNeue';
   src: url("../fonts/uni-neue/UniNeueRegular.eot");
@@ -978,6 +977,7 @@ ol li:before {
   border: 1px solid #E2E2E2;
   border-radius: 4px;
   padding: 21px 25px 30px;
+  margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1016,7 +1016,7 @@ ol li:before {
 .upload-image .btn-secondary:hover {
   color: #fff; }
 
-.image-upload__image {
+.image-upload__image .thumb-Images {
   background: #FFFFFF;
   border: 1px solid #E2E2E2;
   border-radius: 4px;
@@ -1031,7 +1031,30 @@ ol li:before {
   flex-wrap: wrap; }
 .thumb-Images .img-wrap {
   padding: 10px;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
+.thumb-Images .img-wrap .close {
+  position: absolute;
+  border: 1px solid #E2E2E2;
+  top: 15px;
+  right: 15px;
+  border-radius: 50px;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 .thumb-Images .img-wrap .thumb {
   width: 150px;
   height: 150px;
@@ -1079,7 +1102,7 @@ ol li:before {
 
 .rating > label .icon {
   fill: #E2E2E2;
-  margin: 0 auto 8px; }
+  margin-bottom: 8px; }
 
 .rating > label:before {
   margin: 5px;
@@ -1102,6 +1125,7 @@ ol li:before {
 
 .hero {
   padding: 231px 0 0;
+  margin-bottom: 122px;
   background-size: cover;
   background-repeat: no-repeat; }
 .hero .container {
@@ -1169,7 +1193,7 @@ ol li:before {
   color: #2F2F2F; }
 
 .service {
-  padding: 222px 0 68px; }
+  padding: 100px 0 68px; }
 .service .title-section {
   margin-bottom: 6px; }
 .service .subtitle-section {
@@ -2050,10 +2074,12 @@ ol li:before {
     text-align: left; }
   .subtitle-section {
     text-align: left; }
+  .hero {
+    margin-bottom: 202px; }
   .hero-item {
     width: calc(100% - 30px); }
   .service {
-    padding: 242px 0 68px; }
+    padding: 60px 0 68px; }
   .service-item {
     width: 100%;
     -ms-flex-preferred-size: calc(100% - 30px);
@@ -2138,16 +2164,17 @@ ol li:before {
 
 @media screen and (max-width: 480px) {
   .hero {
-    background-position: 50% 0; }
+    background-position: 50% 0;
+    margin-bottom: 310px; }
   .hero .container {
-    padding: 0 15px 375px; }
+    padding: 0 15px 275px; }
   .hero-wrap {
     bottom: -280px;
     padding: 30px; }
   .hero-item {
     width: 100%; }
   .service {
-    padding: 342px 0 50px; }
+    padding: 60px 0 50px; }
   .banner.banner-second .banner-media {
     background-size: 280px;
     background-position: center bottom; }
