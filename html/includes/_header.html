@@ -1,11 +1,15 @@
 <header class="header wrapper" id="header">
     <div class="container">
         <div class="header-logo">
-            <a href="#"><img src="../static/images/general/logo.svg" alt="logo"></a>
+            <a href="#">
+                <img src="../static/images/general/logo.svg" alt="logo">
+                <img src="../static/images/general/logo-black.svg" alt="logo" class="hidden">
+            </a>
         </div>
         <div class="header-phone">
             <a href="tel:+380504494717" target="_blank">+38 (050) 44 94 717</a>
         </div>
+        <div class="header-title">Меню</div>
         <div class="header-btn">
             <span></span>
         </div>
@@ -44,8 +48,7 @@
                 <b>Графік роботи:</b>
                 <span>Пн-Нд 9:00-21:00</span>
             </div>
-
-            <button type="button" class="btn-primary">Замовити ремонт</button>
+            <button type="button" class="btn-popup btn-primary" data-popup="call">Замовити ремонт</button>
         </div>
         <div class="header-lang">
             <span class="header-lang__title">UA</span>
@@ -58,4 +61,5 @@
             </ul>
         </div>
     </div>
+    <div class="header-overlay"></div>
 </header>

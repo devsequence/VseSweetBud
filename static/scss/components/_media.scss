@@ -247,6 +247,7 @@
       }
     }
     &-nav{
+      transition: opacity 300ms ease;
       position: absolute;
       visibility: hidden;
       margin: 0;
@@ -279,6 +280,7 @@
       }
     }
     &-button{
+      transition: opacity 300ms ease;
       position: absolute;
       visibility: hidden;
       opacity: 0;
@@ -326,6 +328,7 @@
       }
     }
     &-lang{
+      transition: opacity 300ms ease;
       position: absolute;
       visibility: hidden;
       opacity: 0;
@@ -337,10 +340,17 @@
       margin: 0;
       max-width: 375px;
       background: #fff;
+      &:hover{
+        ul{
+          top: 0;
+          left: 0;
+        }
+      }
       &__title{
         display: none;
       }
       ul{
+        background: transparent;
         display: flex;
         position: relative;
         opacity: 1;
@@ -362,6 +372,32 @@
         line-height: 16px;
       }
     }
+    &-overlay{
+      position: fixed;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1;
+      transition: all ease 300ms;
+      width: 100%;
+      height: 100%;
+      background: rgba(47,47,47,.2);
+    }
+    &-title{
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: -20px;
+      right: 0;
+      padding: 34px 0 0 20px;
+      width: 100%;
+      height: 76px;
+      max-width: 375px;
+      background: #fff;
+      transition: opacity 300ms ease;
+    }
     &-btn{
       width: 23px;
       height: 18px;
@@ -379,11 +415,11 @@
         transition: all ease 300ms;
       }
       &:before{
-        top: 1.4px;
+        top: 0;
         width: 18px;
       }
       &:after{
-        top: calc(100% - 1.4px);
+        top: calc(100% - 2px);
         width: 14px;
       }
       span{
@@ -405,6 +441,7 @@
           opacity: 0;
         }
       }
+
     }
     &.active{
       .header-button,
@@ -413,6 +450,15 @@
         opacity: 1;
         visibility: visible;
         z-index: 10;
+      }
+      .header-title{
+        opacity: 1;
+        visibility: visible;
+      }
+      .header-overlay{
+        opacity: 1;
+        visibility: visible;
+        z-index: 9;
       }
     }
   }

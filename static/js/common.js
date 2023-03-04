@@ -1,3 +1,20 @@
+AOS.init({disable: 'mobile'});
+$(window).on('scroll', function() {
+    var $this = $(this),
+        $header = $('.header'),
+        $hero = $('.hero');
+    if($hero.length > 0){
+
+        if ($this.scrollTop() > $hero.height()) {
+            $header.addClass('scroll-nav');
+        }
+        else{
+            $header.removeClass('scroll-nav');
+        }
+    }
+
+});
+
 $('.header-btn').on('click', function (e) {
     var $this = $(this);
     $this.toggleClass('active');
@@ -12,7 +29,7 @@ $('.header-nav a, .footer-nav a').on('click', function (e) {
     var headerHeight = $('.header').height();
     if ($(ths).data('id')) {
         $('html, body').animate({
-            scrollTop: $('#'+thsId).offset().top - 120
+            scrollTop: $('#'+thsId).offset().top - 100
         }, 1000);
         $('.header, .header-btn').removeClass('active');
         $('body').removeClass('scroll');
@@ -123,7 +140,7 @@ function popupOpen() {
 popupOpen();
 $('.popup-close').on('click', function (e) {
     var $this = $(this);
-    $this.parent().parent().removeClass('active');
+    $this.parents('.popup').removeClass('active');
     $('.popup-overlay').removeClass('active');
     // $('body').removeClass('scroll');
 });

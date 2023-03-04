@@ -6,6 +6,7 @@
   left: 0;
   right: 0;
   padding: 36px 0;
+  transition: all ease 300ms;
   .container{
     position: relative;
     display: flex;
@@ -123,6 +124,46 @@
       line-height: 19px;
       padding: 13px 24px 16px;
       min-width: auto;
+    }
+  }
+  &-title{
+    display: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2F2F2F;
+    background: #fff;
+
+  }
+  &.scroll-nav{
+    position: fixed;
+    top: 0;
+    padding: 10px 0;
+    background: $white;
+    box-shadow: 0px 0px 40px rgba(0,0 ,0,.07);
+    .header-logo{
+      img{
+        display: none;
+      }
+      .hidden{
+        display: block !important;
+      }
+    }
+    .header-phone{
+      a{
+        color: $default;
+      }
+    }
+    .header-lang__title{
+      color: $default;
+      &:after{
+        background-image: url("data:image/svg+xml,%3Csvg width='11' height='7' viewBox='0 0 11 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5.5 5.5L10 1' stroke='%231E1E1E' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      }
+    }
+    .header-nav {
+      a{
+        color: $default;
+      }
     }
   }
 }
