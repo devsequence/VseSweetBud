@@ -1079,7 +1079,7 @@ ol li:before {
 
 .rating > label .icon {
   fill: #E2E2E2;
-  margin-bottom: 8px; }
+  margin: 0 auto 8px; }
 
 .rating > label:before {
   margin: 5px;
